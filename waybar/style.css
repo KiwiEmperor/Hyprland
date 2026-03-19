@@ -1,0 +1,64 @@
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+.modules-left {
+background: #242424;
+padding: 6px 12px;
+border-radius: 28px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modules-center {
+background: #242424;
+padding: 6px 12px;
+border-radius: 28px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modules-right {
+background: #242424;
+padding: 6px 12px;
+border-radius: 28px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#pulseaudio, #workspaces button, #clock, #battery, #cpu, #custom-gpu, #memory, #disk, #temperature, #backlight, #network, #wireplumber, #custom-media, #tray, #mode, #idle_inhibitor, #scratchpad, #power-profiles-daemon, #mpd {
+background-color: transparent;
+color: #ffffff;
+}
+
+#window, #workspaces {
+margin: 0 4px;
+color: #ffffff;
+}
+
+#workspaces button.focused, #workspaces button.active {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#power-profiles-daemon.performance, #power-profiles-daemon.balanced, #power-profiles-daemon.power-saver, #network.disconnected, #pulseaudio.muted, #wireplumber.muted, #custom-media.custom-spotify, #custom-media.custom-vlc, #temperature.critical, #tray > .passive, #tray > .needs-attention, #idle_inhibitor.activated {
+background-color: transparent;
+color: #ffffff;
+}
+
+#idle_inhibitor.activated {
+color: #2d3436;
+}
+#custom-menu {
+    background-color: transparent;
+    color: #333333;  /* Dark grey text color */
+    font-size: 18px;  /* Larger font size for the Apple icon */
+    padding: 0 8px;
+    border-radius: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+#custom-menu:hover {
+    background-color: #e0e0e0;  /* Light grey background on hover */
+}

@@ -1,0 +1,72 @@
+{
+    "height": 46,
+    "spacing": 4,
+    "modules-left": [
+        "custom/menu",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        //"hyprland/window",
+        "hyprland/workspaces",
+        "custom/media",
+        "pulseaudio",
+        "cpu",
+	"custom/gpu",
+        "memory"
+    ],
+    "modules-right": [
+        "clock"
+    ],
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}"
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%a %b %d %I:%M %p}"
+    },
+    "cpu": {
+        "format": "CPU: {usage}% ",
+        "tooltip": false
+    },  
+    "memory": {
+        "format": "RAM: {}% "
+    },
+    "pulseaudio": {
+        "format": "Audio: {volume}% ",
+        "format-bluetooth": "Audio: {}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/menu": {
+        "exec": "echo '🍎'",  // Example command to display the Apple icon
+        "on-click": "open -a Finder",  // Example command to open Finder on click
+        "interval": 0
+    },
+    "custom/gpu": {
+    "exec": "python3 /scripts/gpu.py ",
+    "interval": 5,
+    "tooltip": false
+},
+"workspaces": {
+    "all-outputs": true,
+    "disable-scroll": true,
+    "format": "{name} {icon}",
+    "format-icons": ["", ""],
+    "tooltip": true,
+    "tooltip-format": "Workspace: {name}"
+}
+}
