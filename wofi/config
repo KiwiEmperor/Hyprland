@@ -1,0 +1,13 @@
+style = ~/.config/wofi/style.css
+
+mode=drun,run
+term=alacritty
+hide_scroll=false
+insensitive=true
+height=30%
+width=30%
+prompt=Search...
+allow_markup=true
+columns=3
+allow_images=true
+icon_theme=WhiteSur
